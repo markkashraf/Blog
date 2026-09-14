@@ -1,0 +1,6 @@
+[     179ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/core-CK5_Em9Y.js?v=5c11ebb6:13268
+[     182ms] [ERROR] ERROR RuntimeError: NG04002: Cannot match any routes. URL Segment: 'categories/add'
+    at Recognizer.noMatchError (http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/@angular_router.js?v=5c11ebb6:2700:10)
+    at Recognizer.match (http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/@angular_router.js?v=5c11ebb6:2726:41)
+    at async Recognizer.recognize (http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/@angular_router.js?v=5c11ebb6:2704:38)
+    at async http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/@angular_router.js?v=5c11ebb6:2889:62 @ http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/core-CK5_Em9Y.js?v=5c11ebb6:3703

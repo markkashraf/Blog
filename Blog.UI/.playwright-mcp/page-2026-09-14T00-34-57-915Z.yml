@@ -1,0 +1,10 @@
+- navigation [ref=e4]:
+  - generic [ref=e5]:
+    - link "Navbar" [ref=e6] [cursor=pointer]:
+      - /url: "#"
+    - list [ref=e8]:
+      - listitem [ref=e9]:
+        - link "Admin" [ref=e10] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e11]:
+        - button "Dropdown link" [ref=e12] [cursor=pointer]

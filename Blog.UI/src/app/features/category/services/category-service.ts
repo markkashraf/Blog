@@ -6,7 +6,7 @@ import { AddCategoryRequest } from '../models/category.model';
 @Service()
 export class CategoryService {
     private http = inject(HttpClient);
-    private apiBaseUrl = 'TBD';
+    private apiBaseUrl = 'http://localhost:5555';
 
 
     addCategoryStatus = signal<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -19,6 +19,7 @@ export class CategoryService {
                 this.addCategoryStatus.set('success');
             },
             error: (error) => {
+                console.error('Failed to add category', error.error ?? error);
                 this.addCategoryStatus.set('error');
             }
         });

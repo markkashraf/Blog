@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CodePulseConnectionString"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"));
 });
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();

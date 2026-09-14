@@ -7,7 +7,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "Blog": {
-      "projectType": "application",
+      "projectType": "g plication",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",

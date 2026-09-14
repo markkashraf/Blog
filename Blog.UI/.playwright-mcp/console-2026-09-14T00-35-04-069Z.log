@@ -1,0 +1,7 @@
+[      38ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/core-CK5_Em9Y.js?v=5c11ebb6:13268
+[   46843ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:5555/api/categories:0
+[   46844ms] [ERROR] Failed to add category {type: https://tools.ietf.org/html/rfc9110#section-15.5.1, title: One or more validation errors occurred., status: 400, errors: Object, traceId: 00-c3248c9a65322dd1962f10e41d94cf95-a48afe3526b94837-00} @ http://localhost:4200/main.js:33
+[   46845ms] [LOG] failed @ http://localhost:4200/main.js:64
+[   68798ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/core-CK5_Em9Y.js?v=5c11ebb6:13268
+[   76126ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Users/mark_/OneDrive/Documents/Blog/Blog.UI/.angular/cache/22.1.8/Blog/vite/deps/core-CK5_Em9Y.js?v=5c11ebb6:13268
+[  104578ms] [LOG] successss @ http://localhost:4200/main.js:61
