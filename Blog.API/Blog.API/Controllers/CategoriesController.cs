@@ -1,4 +1,5 @@
-﻿using CodePulse.API.Data;
+﻿using System.ComponentModel;
+using CodePulse.API.Data;
 using CodePulse.API.Models.Domain;
 using CodePulse.API.Models.DTO;
 using CodePulse.API.Repositories.Interface;
@@ -47,22 +48,41 @@ namespace CodePulse.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
-            var caterogies = await categoryRepository.GetAllAsync();
+            IEnumerable<Category> categories = await categoryRepository.GetAllAsync();
+            List<CategoryDto> response = new List<CategoryDto>();
 
-            // Map Domain model to DTO
 
-            var response = new List<CategoryDto>();
-            foreach (var category in caterogies)
+            foreach(var c in categories)
             {
-                response.Add(new CategoryDto
-                {
-                    Id = category.Id,
-                    Name = category.Name,
-                    UrlHandle = category.UrlHandle
-                });
+                response.Add(c.ConvertToDTO());
             }
 
             return Ok(response);
+
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCategoryById(Guid id)
+        {  
+            var ans = await categoryRepository.GetById(id);
+
+            if (ans == null) return NotFound();
+
+         return Ok(ans);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCategoryById(UpdateCategoryRequestDto request)
+        {
+            var category = await categoryRepository.UpdateById(request.ToCategory());
+            if(category==null)
+            {
+                return NotFound();
+            }
+            else
+            {
+             return  Ok(category.ConvertToDTO());
+            }
         }
     }
 }
